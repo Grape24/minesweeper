@@ -1,0 +1,167 @@
+body {
+    font-family: 'VT323', monospace;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(221,221,221,1) 50%, rgba(182,182,182,1) 100%);
+}
+
+td {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    background-color: #a7a6a6;
+    border: outset 5px rgb(196, 190, 190);
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    color: #333a50';
+}
+
+.levels {
+    width: 5%;
+    margin: auto;
+}
+
+.counted {
+    background-color: azure;
+}
+
+button {
+    height: 50px;
+    border: outset 5px rgb(196, 190, 190);
+    display: block;
+    background-color: rgb(201, 200, 200);
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.timer {
+    color: red;
+    float: left;
+    height: 40px;
+    text-shadow: 2px 2px rgb(88, 24, 24);
+    width: 30%;
+    border: outset 5px rgb(68, 64, 64);
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(46, 11, 11);
+}
+
+.game {
+    margin: auto;
+    width: 45%;
+}
+
+h1 {
+    font-size: 100px;
+    text-shadow: 2px 2px rgb(158, 157, 157);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.smiley{
+    margin:auto;
+}
+.top-game{
+    border: outset 5px rgb(197, 197, 197);
+    width: 100%;
+    display: inline-block;
+    background-color: #c9c9c9;
+}
+.safe-click{
+    float:right;
+    width: 30%;
+}
+
+.win-modal {
+    font-size: 150px;
+    text-align: center;
+    width: 70%;
+    height: 45%;
+    left: 17%;
+    top: 30%;
+    position: absolute;
+    display: none;
+    
+}
+
+svg { 
+    border-radius: 50px;
+    background: rgb(18,18,18);
+    background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(88,88,88,0.9472163865546218) 50%, rgba(22,21,21,0.908000700280112) 100%);
+    font: 10.5em;
+    width: 80%;
+    height: 50%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 7px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #868686;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: rgb(161, 161, 161);
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: white;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: rgb(179, 178, 178);
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #8a8a8a;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+.crystal{
+    position: absolute;
+    bottom: 10%;
+    opacity: 0.7; 
+}
+.bonsai{
+    position: absolute;
+    bottom: 30%;
+    right: 90%;
+    opacity: 0.7;
+}
+.momo{
+    position: absolute;
+    left: 35%;
+    top: 90%;
+    opacity: 0.7;
+}
+.lives{
+    font-size: 45px;
+    text-shadow: 2px 2px rgb(158, 157, 157);
+}
+
+.best-score{
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(158, 157, 157);
+}

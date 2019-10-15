@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="init(gLevel.SIZE)">
+    <h1>Mine Sweeper</h1>
+    <div class="best-score">Best Score:
+        <span class="max-time"></span>
+    </div>
+
+    <div class="game">
+        <div class="top-game">
+            <button data-click="0" onclick="safeClick(this)" class="safe-click">You have 3 safe clicks</button>
+            <div class="timer">00:00</div>
+            <button onclick="restartGame(this);" class="smiley"> 😊</button>
+        </div>
+        <div class="lives">3 LIVES LEFT</div>
+        <div class="win-modal">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">WINNING</text>
+                </symbol>
+
+                <g class="g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+            <img class="crystal" width="30%" src="images/crystal.png" alt="coolpic">
+            <img class="bonsai" width="30%" src="images/bonsai.gif" alt="coolpic">
+            <img class="momo" width="25%" src="images/momo.png" alt="coolpic">
+        </div>
+        <div class="board-container"></div>
+        <div class="levels">
+            <button onclick="levelClicked(this)">Level One</button>
+            <button onclick="levelClicked(this)">Level Two</button>
+            <button onclick="levelClicked(this)">Level Three</button>
+        </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/cells.js"></script>
+    <script src="js/mines.js"></script>
+</body>
+
+</html>
